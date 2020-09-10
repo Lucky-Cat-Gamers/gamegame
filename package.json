@@ -1,0 +1,25 @@
+{
+  "name": "witchfall",
+  "version": "1.0.0",
+  "description": "A fun game using React",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-dusk:Lucky-Cat-Gamers/gamegame.git"
+  },
+  "author": "Lucky Cat Games",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
