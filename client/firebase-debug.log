@@ -1,0 +1,21 @@
+[debug] [2020-09-10T23:36:08.775Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T23:36:08.777Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\krist\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-10T23:36:08.777Z] CLI Version:   8.10.0
+[debug] [2020-09-10T23:36:08.777Z] Platform:      win32
+[debug] [2020-09-10T23:36:08.777Z] Node Version:  v12.18.3
+[debug] [2020-09-10T23:36:08.778Z] Time:          Thu Sep 10 2020 16:36:08 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-09-10T23:36:08.778Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T23:36:08.778Z] 
+[debug] [2020-09-10T23:36:08.784Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T23:36:08.785Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\krist\Documents\BOOTCAMP\FINALPROJECT\Project3\gamegame\client
+
