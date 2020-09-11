@@ -9,6 +9,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "client/build")));
 
+require("./routes/apiRoutes")(app);
+
+// Testing base backend
+app.get("/test", (req, res) => {
+  res.send("Works");
+});
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
