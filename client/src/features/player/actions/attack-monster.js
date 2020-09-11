@@ -2,7 +2,7 @@ import { checkForMonster, getNewPosition, observeBoundaries } from './move-playe
 import calculateDamage from '../../../utils/calculate-damage';
 import calculateBonus  from '../../../utils/calculate-bonus';
 import getNextTile     from '../../../utils/get-next-tile';
-import { SPRITE_SIZE } from '../../../config/constants';
+// import { SPRITE_SIZE } from '../../../config/constants';
 
 export default function attackMonster() {
   return (dispatch, getState) => {
@@ -66,13 +66,14 @@ export default function attackMonster() {
           });
           // replace monster will blood spill
           // need to pass relative tile index
-          dispatch({
-            type: 'ADD_BLOOD_SPILL',
-            payload: {
-              x: monsterPos[0] / SPRITE_SIZE,
-              y: monsterPos[1] / SPRITE_SIZE
-            }
-          });
+          //removing blood spill
+          // dispatch({
+          //   type: 'ADD_BLOOD_SPILL',
+          //   payload: {
+          //     x: monsterPos[0] / SPRITE_SIZE,
+          //     y: monsterPos[1] / SPRITE_SIZE
+          //   }
+          // });
         }
 
         // take a turn if the player attacked something

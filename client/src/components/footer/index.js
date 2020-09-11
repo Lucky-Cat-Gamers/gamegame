@@ -8,10 +8,10 @@ const Footer = () => {
   return(
     <div className='footer__container'>
 
-      <span>{`Made with ♥ by Andrew Steinheiser - v${version} - `}</span>
+      <span>{`Makeover with ♥ by the Lucky Cat Gamers - v${version} - `}</span>
 
       <a className='footer__link'
-        href='https://github.com/ASteinheiser/react-rpg.com'
+        href='https://github.com/Lucky-Cat-Gamers'
         target='_blank'
         rel='noopener noreferrer'>
         {'View Source'}
