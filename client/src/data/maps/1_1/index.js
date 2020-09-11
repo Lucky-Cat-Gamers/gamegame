@@ -18,23 +18,23 @@ const tiles = [
 
 const monsters = [
   {
-    type: 'rat',
+    type: 'spider',
     position: [6, 5]
   },
   {
-    type: 'rat',
+    type: 'spider',
     position: [7, 11]
   },
   {
-    type: 'rat',
+    type: 'spider',
     position: [12, 13]
   },
   {
-    type: 'rat',
+    type: 'spider',
     position: [15, 10]
   },
   {
-    type: 'rat',
+    type: 'spider',
     position: [14, 4]
   }
 ];
