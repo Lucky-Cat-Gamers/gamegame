@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect }                    from 'react-redux';
 import Sound                          from 'react-sound';
 
-import AmbientMusic     from './ambient-music.mp3';
+import AmbientMusic     from './lindsey_stirling-intothewoods.mp3';
 import setGameSound     from '../actions/set-game-sound';
 import gameSoundEnabled from '../actions/game-sound-enabled';
 
@@ -35,7 +35,7 @@ const GameMusic = ({ sideMenu, gameSoundEnabled, setGameSound }) => {
           playStatus={'PLAYING'}
           autoLoad={true}
           loop={true}
-          volume={50} />
+          volume={20} />
       );
     }
     // now we no longer need our key or mouse event listeners

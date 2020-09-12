@@ -16,7 +16,16 @@ const Footer = () => {
         rel='noopener noreferrer'>
         {'View Source'}
       </a>
+      <br /><br />
 
+      <span>{`Original game by Andrew Steinheiser  - `}</span>
+  
+      <a className='footer__link'
+        href='https://github.com/ASteinheiser/react-rpg.com'
+        target='_blank'
+        rel='noopener noreferrer'>
+        {'View Source'}
+      </a>
     </div>
   );
 };

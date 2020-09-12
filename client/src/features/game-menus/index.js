@@ -6,6 +6,7 @@ import GameSettings from './game-settings';
 import Inventory    from '../inventory';
 import Snackbar     from '../snackbar';
 import Stats        from '../stats';
+import GoogleLogin  from '../../components/google-login';
 
 import './styles.scss';
 
@@ -38,17 +39,17 @@ const GameMenus = ({ appState, dialog }) => {
           sideMenu={sideMenu}
           disabled={disableInventory} />
 
-        <Snackbar
-          largeView={largeView}
-          sideMenu={sideMenu} />
-
-        <div className='flex-column'>
-          <GameMusic sideMenu={sideMenu} />
+        <div className='flex-column2'>
           <GameSettings />
         </div>
 
+        <GoogleLogin
+          largeView={largeView}
+          sideMenu={sideMenu} />
+               
       </div>
     </div>
+
   );
 };
 
