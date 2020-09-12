@@ -14,17 +14,14 @@ const GameSelect = ({ mainGameDialog, endlessGameDialog }) => {
   return(
     <Dialog>
       <span className='flex-row game-select__title'>
-        {'React RPG'}
+        {'WITCHFALL'}
       </span>
 
       <span className='flex-column game-select__text'>
-        {'Greetings, Traveler. Please, explore one of our dungeons...'}
+        {'Welcome to Witchfall! Join Addie, the friendly witch, on her adventures.'}
       </span>
 
       <div className='game-select__flame--1'>
-        <Flame />
-      </div>
-      <div className='game-select__flame--2'>
         <Flame />
       </div>
 
@@ -32,13 +29,9 @@ const GameSelect = ({ mainGameDialog, endlessGameDialog }) => {
         <Button
           style={{marginBottom: 16}}
           onClick={mainGameDialog}
-          icon='torah'
-          title={'Story Mode'} />
+          icon='feather-alt'
+          title={'ENTER'} />
 
-        <Button
-          onClick={endlessGameDialog}
-          icon='infinity'
-          title={'Endless Mode'} />
       </div>
     </Dialog>
   );
