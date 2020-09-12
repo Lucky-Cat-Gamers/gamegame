@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect }         from 'react-redux';
+import GameMusic    from '../../../game-menus/game-music';
 
 import Button         from '../../../../components/button';
 import ConfirmDialog  from '../../../../components/confirm-dialog';
@@ -20,10 +21,14 @@ const SettingsDialog = ({ resetGameState, closeSettings }) => {
           {'Settings'}
         </span>
 
+        
+
         <Button
           onClick={() => setConfirmQuit(true)}
           icon='caret-square-left'
           title='Return to Menu' />
+
+        <GameMusic />
 
         <Button
           onClick={closeSettings}

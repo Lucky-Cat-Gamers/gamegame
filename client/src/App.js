@@ -11,7 +11,6 @@ import GameMenus              from './features/game-menus';
 import World                  from './features/world';
 import Viewport               from './components/viewport';
 import useGameViewportScaling from './features/app-state/actions/use-game-viewport-scaling';
-import GoogleLogin            from './components/google-login';
 
 const App = ({ appState, world }) => {
 
@@ -48,7 +47,6 @@ const App = ({ appState, world }) => {
 
   return(
     <>
-    <GoogleLogin/>
 
       <div className={`centered ${sideMenu ? 'flex-row' : 'flex-column'}`}>
 
@@ -64,7 +62,7 @@ const App = ({ appState, world }) => {
         </Viewport>
 
         <GameMenus />
-
+        
       </div>
 
       { showFooter && <Footer /> }

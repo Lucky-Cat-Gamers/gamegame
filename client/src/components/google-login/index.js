@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GoogleLogin from 'react-google-login';
- 
+
 const responseGoogle = (response) => {
     console.log("status",response);
   }
@@ -15,9 +15,7 @@ return (
     onFailure={responseGoogle}
     cookiePolicy={'single_host_origin'}
   /> 
-
 )
  }
- 
-  
+
 export default GoogleAuth
