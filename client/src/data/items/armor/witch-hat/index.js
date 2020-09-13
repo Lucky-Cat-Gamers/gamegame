@@ -1,4 +1,4 @@
-import witchHatImg from './witchHat.jpg';
+import witchHatImg from './witch_hat.png';
 
 const witchHat = {
   name: 'Witch Hat',
