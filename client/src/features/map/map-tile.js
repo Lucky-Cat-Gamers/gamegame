@@ -69,7 +69,11 @@ export function getTileSprite(type, variation) {
       return 'shrine';
     case 11:
       return 'well';
-    default:
+    case 12:
+      return 'pumpkin';
+    case 13:
+      return 'wheat1';
+      default:
   }
 }
 
