@@ -44,8 +44,8 @@ const stairs = {
 };
 
 const message = {
-  title: 'As you enter the dungeon, you start coughing from the putrid scent...',
-  body: `You try to ignore the smell as you recall your quest: Speak with the Old Spirit at his resting place.`
+  title: '(Level 1 under construction, updates daily!)',
+  body: `The town of Pumpkin Falls, where the air smells like pumpkin spice, the trees blaze with fall colors and it is always October...`
 };
 
 export default {
