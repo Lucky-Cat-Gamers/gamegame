@@ -64,9 +64,10 @@ const EquippedItems = ({ stats, unequipItem }) => {
             </div>
           }
         </EmptySlot> */}
+        {/* equipped-items__pants just refers to location of body armor position on inventory */}
         <EmptySlot className='white-border equipped-items__pants'>
           {
-            armor && armor.pants ?
+            armor && armor.body ?
               <button className='equipped-items__slot'
                 onClick={() => unequipItem(armor.body)}
                 style={{ backgroundImage: `url('${armor.body.image}')` }}>

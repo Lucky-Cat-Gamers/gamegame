@@ -2,7 +2,7 @@ import capeImg from './cape.png';
 
 const cape = {
   name: 'Cape',
-  type: 'armor::cape',
+  type: 'armor::body',
   defence: 5,
 //   protection: spiders, spiderWebs,
   image: capeImg,
