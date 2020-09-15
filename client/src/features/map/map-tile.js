@@ -72,7 +72,9 @@ export function getTileSprite(type, variation) {
     case 12:
       return 'pumpkin';
     case 13:
-      return 'wheat1';
+      return 'wheat';
+    case 14:
+       return 'windmill';
       default:
   }
 }
