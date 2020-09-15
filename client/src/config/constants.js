@@ -9,7 +9,7 @@ export const ANIMATION_SPEED = 350;
 export const SPRITE_SIZE = 40;
 // number of tiles in the map
 const TILE_HEIGHT = 16;
-const TILE_WIDTH = 25;
+const TILE_WIDTH = 28;
 export const MAP_DIMENSIONS = [TILE_WIDTH, TILE_HEIGHT];
 // map size is set to 800 x 600
 export const MAP_HEIGHT = SPRITE_SIZE * TILE_HEIGHT;
