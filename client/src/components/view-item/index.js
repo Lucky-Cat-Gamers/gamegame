@@ -61,29 +61,29 @@ const ViewItem = ({ sell, buy, onClose, data, stats, unequipItem, buyItem,
       });
       break;
 
-    case 'armor::helmet':
+    case 'armor::hat':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.helmet) === JSON.stringify(data));
-      itemStats.push(<StatsItem stats={{ name: 'defence', value: data.defence }} key={uuidv4()} />);
+      itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
-    case 'armor::body':
+    case 'armor::cape':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.body) === JSON.stringify(data));
-      itemStats.push(<StatsItem stats={{ name: 'defence', value: data.defence }} key={uuidv4()} />);
+      itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
     case 'armor::gloves':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.gloves) === JSON.stringify(data));
-      itemStats.push(<StatsItem stats={{ name: 'defence', value: data.defence }} key={uuidv4()} />);
+      itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
     case 'armor::boots':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.boots) === JSON.stringify(data));
-      itemStats.push(<StatsItem stats={{ name: 'defence', value: data.defence }} key={uuidv4()} />);
+      itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
     case 'armor::pants':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.pants) === JSON.stringify(data));
-      itemStats.push(<StatsItem stats={{ name: 'defence', value: data.defence }} key={uuidv4()} />);
+      itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
     default:

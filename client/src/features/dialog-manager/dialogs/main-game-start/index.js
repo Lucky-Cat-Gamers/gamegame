@@ -19,14 +19,14 @@ const MainGameStart = ({ startMainGame, backToSelect }) => {
       </span>
 
       <span className='flex-column game-start__text'>
-        {'Explore the dark dungeon, full of monsters and gear!'}
+        {'In this section of the game, explore the town of Pumpkin Falls'}
       </span>
 
       <div className='flex-column game-start__button'>
         <Button
           onClick={startMainGame}
           icon='compass'
-          title={'Explore Dungeon'} />
+          title={'Explore Town'} />
       </div>
 
     </Dialog>

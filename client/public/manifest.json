@@ -1,6 +1,6 @@
 {
-  "short_name": "React-RPG.com",
-  "name": "Dungeon-crawler RPG made with React",
+  "short_name": "WitchFall",
+  "name": "Student project based on a Dungeon-crawler RPG made with React",
   "icons": [
     {
       "src": "favicon.png",
