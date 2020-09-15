@@ -4,7 +4,7 @@ const staff = {
   name: 'Witch Staff',
   type: 'weapon',
   range: 'melee',
-  damage: 10,
+  damage: 2,
   image: staffImg,
   value: 1
 };
