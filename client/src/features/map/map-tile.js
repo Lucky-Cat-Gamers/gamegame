@@ -81,6 +81,10 @@ export function getTileSprite(type, variation) {
       return 'school';
     case 17:
       return 'cemetery';
+    case 18:
+      return 'bakery';
+    case 19:
+      return 'book';
       default:
   }
 }
