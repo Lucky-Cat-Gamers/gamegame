@@ -1,3 +1,3 @@
 module.exports = {
-  //Links to schemas go here
+  Status: require("./Status.js"),
 };
