@@ -1,3 +1,3 @@
 module.exports = {
-  Status: require("./Status.js"),
+  Scores: require("./Scores.js"),
 };
