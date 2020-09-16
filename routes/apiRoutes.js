@@ -26,30 +26,30 @@ mongooseConnection.once("open", () => {
 });
 
 module.exports = (app) => {
-  app.get("/load", (req, res) => {});
+  app.post("/login", (req, res) => {
+    req.session.name = req.body.name;
+  });
+
+  app.get("/logout", (req, res) => {
+    req.session.destroy((err) => {
+      if (err) {
+        return res.redirect("/");
+      }
+      res.clearCookie("sid");
+    });
+  });
+
+  app.get("/load", (req, res) => {
+    var user = req.session.name;
+  });
 
   app.post("/save", (req, res) => {
-    var {
-      user,
-      hp,
-      maxHp,
-      damage,
-      defence,
-      level,
-      exp,
-      expToLevel,
-      gold,
-    } = req.body;
+    var user = req.session.name;
+    var { level, gold } = req.body;
 
-    db.Status.create({
+    db.Scores.create({
       user: user,
-      hp: hp,
-      maxHp: maxHp,
-      damage: damage,
-      defence: defence,
       level: level,
-      exp: exp,
-      expToLevel: expToLevel,
       gold: gold,
     }).then((resp) => {
       res.send(resp);
