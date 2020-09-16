@@ -2,6 +2,7 @@
   "name": "react-rpg.com",
   "version": "1.1.0",
   "private": true,
+  "proxy": "http://localhost:8081",
   "dependencies": {
     "body-scroll-lock": "^2.6.1",
     "customize-cra": "^0.2.11",
