@@ -74,7 +74,17 @@ export function getTileSprite(type, variation) {
     case 13:
       return 'wheat';
     case 14:
-       return 'windmill';
+      return 'windmill';
+    case 15:
+      return 'barn';
+    case 16:
+      return 'school';
+    case 17:
+      return 'cemetery';
+    case 18:
+      return 'bakery';
+    case 19:
+      return 'book';
       default:
   }
 }
