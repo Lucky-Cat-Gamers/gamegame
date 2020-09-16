@@ -18,6 +18,9 @@ const App = ({ appState, world }) => {
 
   const [showDownloadPopup, setShowDownloadPopup] = useState(false);
 
+  componentDidMount() {
+    console.log(getState());
+  }
   // disable scrolling of the page
   // prevents iOS Safari bouncing during movement
   useEffect(() => {
