@@ -9,7 +9,7 @@ export default function takeMonstersTurn() {
   return (dispatch, getState) => {
     const { monsters, map, world } = getState();
 
-    console.log(`GET STATE: ${getState()}`);
+    console.log(`GET STATE: ${JSON.stringify(getState())}`);
     // get the current monsters
     const { components } = monsters;
     const { sightBox } = map;
