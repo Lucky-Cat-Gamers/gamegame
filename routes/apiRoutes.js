@@ -26,5 +26,33 @@ mongooseConnection.once("open", () => {
 });
 
 module.exports = (app) => {
-  //api routes go here
+  app.get("/load", (req, res) => {});
+
+  app.post("/save", (req, res) => {
+    var {
+      user,
+      hp,
+      maxHp,
+      damage,
+      defence,
+      level,
+      exp,
+      expToLevel,
+      gold,
+    } = req.body;
+
+    db.Status.create({
+      user: user,
+      hp: hp,
+      maxHp: maxHp,
+      damage: damage,
+      defence: defence,
+      level: level,
+      exp: exp,
+      expToLevel: expToLevel,
+      gold: gold,
+    }).then((resp) => {
+      res.send(resp);
+    });
+  });
 };

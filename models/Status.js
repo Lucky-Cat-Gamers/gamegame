@@ -3,6 +3,10 @@ let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let StatusSchema = new Schema({
+  user: {
+    type: String,
+    required: true,
+  },
   hp: {
     type: int,
     required: true,
