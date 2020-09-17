@@ -11,25 +11,25 @@ import resetGameState from "../../../world/actions/reset-game-state";
 
 import "./settings-dialog.scss";
 
-const SaveScore = () => {
-  return (dispatch, getState) => {
-    const { level, gold } = getState().stats;
-
-    axios
-      .post("/save", {
-        level: level,
-        gold: gold,
-      })
-      .then((resp) => {
-        console.log("Save request successful");
-      });
-
-    console.log("Ran save score");
-  };
-};
-
 const SettingsDialog = ({ resetGameState, closeSettings }) => {
   const [confirmQuit, setConfirmQuit] = useState(false);
+
+  const SaveScore = () => {
+    return (dispatch, getState) => {
+      const { level, gold } = getState().stats;
+
+      axios
+        .post("/save", {
+          level: level,
+          gold: gold,
+        })
+        .then((resp) => {
+          console.log("Save request successful");
+        });
+
+      console.log("Ran save score");
+    };
+  };
 
   return (
     <Dialog>
