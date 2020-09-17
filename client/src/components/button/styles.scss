@@ -1,14 +1,12 @@
 .button__container {
   padding: 15px;
-
   user-select: none;
+  border: 2px solid darkgoldenrod;
 
   .button__icon {
     position: relative;
-
     padding-right: 15px;
     padding-left: 5px;
-
     font-size: 22px;
   }
 
@@ -16,14 +14,10 @@
     position: absolute;
     bottom: -5px;
     right: 7px;
-
     border-radius: 10px;
-
     width: 15px;
     height: 15px;
-
     background: var(--light-red);
-
     animation: fade 4s ease-in-out infinite;
     opacity: 1;
   }

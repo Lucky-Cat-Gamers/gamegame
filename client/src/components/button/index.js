@@ -14,7 +14,7 @@ const Button = ({ icon, title, iconStyle, style, indicator, onClick, small }) =>
 
   return(
     <button
-      className={`button__container white-border ${small ? 'button__container--small' : ''}`}
+      className={`button__container ${small ? 'button__container--small' : ''}`}
       style={style || {}}
       onClick={handleClick}>
 

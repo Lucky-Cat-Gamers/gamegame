@@ -14,16 +14,12 @@ const GameSelect = ({ mainGameDialog, endlessGameDialog }) => {
   return(
     <Dialog>
       <span className='flex-row game-select__title'>
-        {'WITCHFALL'}
+        {' '}
       </span>
 
       <span className='flex-column game-select__text'>
         {'Welcome to Witchfall! Join Addie, the friendly witch, on her adventures.'}
       </span>
-
-      <div className='game-select__flame--1'>
-        <Flame />
-      </div>
 
       <div className='flex-column game-select__button'>
         <Button

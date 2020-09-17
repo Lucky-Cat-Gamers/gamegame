@@ -19,7 +19,7 @@ const Dialog = ({ children, goBack, onKeyPress }) => {
   }
 
   return(
-    <div className='dialog__container white-border'>
+    <div className='dialog__container'>
       {
         goBack &&
           <button onClick={goBack} className='dialog__back-button'>

@@ -23,7 +23,7 @@ const Viewport = ({ appState, children }) => {
 
   return(
     <div style={styles}
-      className='viewport__container white-border'>
+      className='viewport__container'>
 
       { children }
 

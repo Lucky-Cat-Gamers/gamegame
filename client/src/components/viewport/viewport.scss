@@ -2,7 +2,7 @@
   position: relative;
 
   overflow: hidden;
-
+  border: 2px solid darkgoldenrod;
   background: repeating-linear-gradient(
     -45deg, var(--dark-gray), var(--dark-gray) 10px,
     var(--medium-gray) 10px, var(--medium-gray) 20px
