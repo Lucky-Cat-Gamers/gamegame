@@ -52,8 +52,12 @@ module.exports = (app) => {
       user: user,
       level: level,
       gold: gold,
-    }).then((resp) => {
-      res.send(resp);
-    });
+    })
+      .then((resp) => {
+        res.send(resp);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   });
 };
