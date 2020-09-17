@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A fun game using React",
   "main": "server.js",
+  "proxy": "https://witchfall.herokuapp.com",
   "directories": {
     "doc": "docs"
   },
