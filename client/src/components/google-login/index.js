@@ -7,7 +7,7 @@ const responseGoogle = (response) => {
   console.log("status", response);
   console.log(`Name: ${response.profileObj.givenName}`);
 
-  axios.post("https://witchfall.herokuapp.com/login", {
+  axios.post("/login", {
     name: response.profileObj.givenName,
   });
 };
