@@ -1,3 +1,3 @@
 module.exports = {
-  //Links to schemas go here
+  Scores: require("./Scores.js"),
 };

@@ -26,5 +26,33 @@ mongooseConnection.once("open", () => {
 });
 
 module.exports = (app) => {
-  //api routes go here
+  app.post("/login", (req, res) => {
+    req.session.name = req.body.name;
+  });
+
+  app.get("/logout", (req, res) => {
+    req.session.destroy((err) => {
+      if (err) {
+        return res.redirect("/");
+      }
+      res.clearCookie("sid");
+    });
+  });
+
+  app.get("/load", (req, res) => {
+    var user = req.session.name;
+  });
+
+  app.post("/save", (req, res) => {
+    var user = req.session.name;
+    var { level, gold } = req.body;
+
+    db.Scores.create({
+      user: user,
+      level: level,
+      gold: gold,
+    }).then((resp) => {
+      res.send(resp);
+    });
+  });
 };
