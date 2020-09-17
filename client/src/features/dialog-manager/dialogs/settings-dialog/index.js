@@ -15,10 +15,14 @@ const SaveScore = () => {
   return (dispatch, getState) => {
     const { level, gold } = getState().stats;
 
-    axios.post("/save", {
-      level: level,
-      gold: gold,
-    });
+    axios
+      .post("/save", {
+        level: level,
+        gold: gold,
+      })
+      .then((resp) => {
+        console.log("Save request successful");
+      });
 
     console.log("Ran save score");
   };
