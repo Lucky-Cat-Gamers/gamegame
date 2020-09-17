@@ -1,6 +1,7 @@
-require("dotenv").config();
+//require("dotenv").config();
 const mongoose = require("mongoose");
 const db = require("../models");
+const session = require("express-session");
 
 mongoose.Promise = Promise;
 
