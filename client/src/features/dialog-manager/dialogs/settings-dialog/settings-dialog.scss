@@ -2,7 +2,6 @@
   padding: 16px 0;
 
   flex: 1;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -10,6 +9,6 @@
 .settings-dialog__title {
   font-size: 28px;
   font-weight: 500;
-
+  color: orange;
   border-bottom: 2px solid;
 }

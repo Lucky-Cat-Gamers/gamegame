@@ -15,7 +15,7 @@ const MainGameStart = ({ startMainGame, backToSelect }) => {
       onKeyPress={startMainGame}>
 
       <span className='flex-row game-start__title'>
-        {'Story Mode'}
+        {' '}
       </span>
 
       <span className='flex-column game-start__text'>
