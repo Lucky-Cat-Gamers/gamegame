@@ -19,6 +19,8 @@ const SaveScore = () => {
       level: level,
       gold: gold,
     });
+
+    console.log("Ran save score");
   };
 };
 
