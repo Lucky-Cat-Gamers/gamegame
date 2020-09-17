@@ -12,6 +12,10 @@ import PlayerStep    from './assets/player-step.wav';
 import SwordSwish    from './assets/player-sword-swish.wav';
 import WalkSprite    from './assets/player_walk.png';
 import { ANIMATION_SPEED, SPRITE_SIZE } from '../../config/constants';
+// import SkunkSpray    from './assets/skunk-spray.png';
+// import staff         from '../../data/items/weapons/staff';
+// import skunk         from '../../data/items/weapons/skunk';
+
 
 import './styles.scss';
 
@@ -227,6 +231,16 @@ class Player extends Component {
     const { gameStart } = dialog;
     // game start menu open, hide the player
     if(gameStart) return null;
+    
+    //trying to incorperate a second attack animation for staff / skunk want to reference equiped item weapon then if skunk if staff Sword-slash or skunk-spray
+    // const EquippedItems = ({ stats }) => {
+
+    //   const { weapon } = stats.equippedItems;
+    
+    //   return (
+    //     <div className='equipped-items__character'
+    //       style={{backgroundImage: `url(${Character})`}}>
+    
 
     return (
       <div className='player__animation'
@@ -257,6 +271,7 @@ class Player extends Component {
                 left: attackAnimationLoc[0],
                 backgroundImage: `url('${SwordSlash}')`
               }} />
+            
         }
       </div>
     );
