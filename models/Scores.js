@@ -8,11 +8,11 @@ let ScoresSchema = new Schema({
     required: true,
   },
   level: {
-    type: int,
+    type: Number,
     required: true,
   },
   gold: {
-    type: int,
+    type: Number,
     required: true,
   },
 });
