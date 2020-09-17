@@ -1,4 +1,8 @@
-# React RPG
+# WITCHFALL RPG - A STUDENT FINAL PROJECT
+
+
+ ![Tux, the Linux mascot](docs/assets/cat3.png)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
 React RPG is an Open-Source RPG made with React and Redux. The game is a turn-based, dungeon crawler that comes with two game modes: Story and Endless. Story mode will lead you through a short story while introducing you to the most powerful creatures. In Endless mode, a unique challenge waits around every corner, as no two maps are the same.

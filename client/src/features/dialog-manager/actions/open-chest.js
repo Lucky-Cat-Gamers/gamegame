@@ -16,6 +16,8 @@ export default function openChest() {
     // get some level based exp
     const exp = (level * 5) + 5;
 
+    console.log("exp:", exp, "Experience to Level:", expToLevel, "stats:", stats);
+
     dispatch({
       type: 'GET_GOLD',
       payload: gold
