@@ -43,7 +43,7 @@ const SettingsDialog = ({ resetGameState, closeSettings }) => {
         />
 
         <Button
-          onClick={() => SaveScore}
+          onClick={SaveScore}
           icon="pen-nib"
           title="Save Your Current Score"
         />
