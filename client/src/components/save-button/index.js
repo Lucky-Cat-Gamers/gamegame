@@ -3,7 +3,7 @@ import axios from "axios";
 import "../button/styles.scss";
 
 const SaveButton = () => {
-  function SaveScore() {
+  const SaveScore = () => {
     console.log("Ran save score");
 
     return (dispatch, getState) => {
@@ -20,7 +20,7 @@ const SaveButton = () => {
           console.log("Save request successful");
         });
     };
-  }
+  };
 
   return (
     <button className="button__container" onClick={() => SaveScore()}>
