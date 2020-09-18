@@ -15,15 +15,14 @@ const SaveButton = () => {
 
     //   console.log(stats);
 
-      axios
-        .post("/save", {
-          level: level,
-          gold: gold,
-        })
-        .then((resp) => {
-          console.log("Save request successful");
-        });
-    };
+    axios
+      .post("/save", {
+        level: level,
+        gold: gold,
+      })
+      .then((resp) => {
+        console.log("Save request successful");
+      });
   };
 
   return (
