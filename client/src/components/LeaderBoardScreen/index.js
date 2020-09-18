@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class LeaderBoard extends Component {
+class LeaderboardScreen extends Component {
   state = {
     scores: [],
   };
@@ -50,4 +50,4 @@ class LeaderBoard extends Component {
   }
 }
 
-export default LeaderBoard;
+export default LeaderboardScreen;

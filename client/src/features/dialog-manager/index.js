@@ -13,6 +13,7 @@ import MainGameStart from "./dialogs/main-game-start";
 import SettingsDialog from "./dialogs/settings-dialog";
 import ShopDialog from "./dialogs/shop-dialog";
 import LevelUp from "./dialogs/level-up";
+import LeaderboardDialog from "./dialogs/leaderboard-dialog";
 
 const DialogManager = ({ dialog }) => {
   const {
@@ -39,7 +40,7 @@ const DialogManager = ({ dialog }) => {
     if (chest) PauseComp = <ChestLoot />;
     if (shop) PauseComp = <ShopDialog />;
     if (inventory) PauseComp = <InventoryDialog />;
-    if (leaderboard) PauseComp = <LeaderBoard />;
+    if (leaderboard) PauseComp = <LeaderboardDialog />;
     if (gameText)
       PauseComp = (
         <GameTextDialog text1={gameText.title} text2={gameText.body} />
