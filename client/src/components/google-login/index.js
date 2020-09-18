@@ -12,7 +12,7 @@ const responseGoogle = (response) => {
       name: response.profileObj.givenName,
     })
     .then((resp) => {
-      console.log(`RESP: ${resp}`);
+      console.log(`RESP: ${resp}`, resp);
       console.log("Login post request successful.");
     });
 };
