@@ -48,7 +48,7 @@ module.exports = (app) => {
     db.Scores.find()
       .then((resp) => {
         const tempArray = resp.sort((a, b) => {
-          return parseInt(a.level) - parseInt(b.level);
+          return a.level - b.level;
         });
         res.json(tempArray);
       })
