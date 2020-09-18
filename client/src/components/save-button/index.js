@@ -1,13 +1,13 @@
 import React from "react";
 import axios from "axios";
-import statsReducer from "../../features/stats/reducer";
+import persistor from "../../config/store";
 import "../button/styles.scss";
 
 const SaveButton = () => {
   function SaveScore() {
     console.log("Ran save score");
 
-    console.log(statsReducer);
+    console.log(persistor);
 
     // return (dispatch, getState) => {
     //   const { level, gold } = getState().stats;
