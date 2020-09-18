@@ -44,6 +44,17 @@ module.exports = (app) => {
 
   app.get("/load", (req, res) => {
     var user = req.session.name;
+
+    db.Scores.find()
+      .then((resp) => {
+        const tempArray = resp.sort((a, b) => {
+          return b.level - a.level;
+        });
+        res.json(tempArray);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   });
 
   app.post("/save", (req, res) => {
