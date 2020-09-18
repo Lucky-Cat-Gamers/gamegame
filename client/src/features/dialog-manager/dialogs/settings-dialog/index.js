@@ -1,35 +1,18 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import GameMusic from "../../../game-menus/game-music";
-import axios from "axios";
 
 import Button from "../../../../components/button";
 import ConfirmDialog from "../../../../components/confirm-dialog";
 import Dialog from "../../../../components/dialog";
 import closeSettings from "../../actions/close-settings";
 import resetGameState from "../../../world/actions/reset-game-state";
+import SaveButton from "../../../../components/save-button";
 
 import "./settings-dialog.scss";
 
 const SettingsDialog = ({ resetGameState, closeSettings }) => {
   const [confirmQuit, setConfirmQuit] = useState(false);
-
-  const SaveScore = () => {
-    return (dispatch, getState) => {
-      const { level, gold } = getState().stats;
-
-      axios
-        .post("/save", {
-          level: level,
-          gold: gold,
-        })
-        .then((resp) => {
-          console.log("Save request successful");
-        });
-
-      console.log("Ran save score");
-    };
-  };
 
   return (
     <Dialog>
@@ -42,11 +25,7 @@ const SettingsDialog = ({ resetGameState, closeSettings }) => {
           title="Return to Menu"
         />
 
-        <Button
-          onClick={SaveScore}
-          icon="pen-nib"
-          title="Save Your Current Score"
-        />
+        <SaveButton />
 
         <GameMusic />
 
