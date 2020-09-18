@@ -5,6 +5,8 @@ import "../button/styles.scss";
 
 const SaveButton = () => {
   function SaveScore() {
+    console.log("Ran save score");
+
     return (dispatch, getState) => {
       const { level, gold } = getState().stats;
 
@@ -18,8 +20,6 @@ const SaveButton = () => {
         .then((resp) => {
           console.log("Save request successful");
         });
-
-      console.log("Ran save score");
     };
   }
 
