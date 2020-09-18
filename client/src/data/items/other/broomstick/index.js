@@ -1,4 +1,4 @@
-import broomstickImg from './broomstick.jpg';
+import broomstickImg from './broomstick.png';
 
 const broomstick = {
   name: 'Broomstick',

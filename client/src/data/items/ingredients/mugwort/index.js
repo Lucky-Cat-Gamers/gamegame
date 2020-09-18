@@ -1,4 +1,4 @@
-import mugwortImg from './mugwort.jpg';
+import mugwortImg from './mugwort.png';
 
 const mugwort = {
   name: 'Mugwort',
