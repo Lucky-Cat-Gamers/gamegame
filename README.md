@@ -1,20 +1,22 @@
+<body style="background-color:black">
+
 ![WitchFall Logo](docs/assets/witchfall-a.png)
 
-# WITCHFALL RPG - A STUDENT FINAL PROJECT
+# <span style="color:orange">WITCHFALL RPG - A STUDENT FINAL PROJECT</span>
 
 
  ![Halloween Kitties](docs/assets/cat4.png)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-green.svg?style=flat-square)](#contributors)
 
-JUST IN TIME FOR HALLOWEEN! ![Halloween Kitties](docs/assets/evilpumpkin__by_clairebearer.gif)<br>
+<span style="color:orange">JUST IN TIME FOR HALLOWEEN!</span> ![Halloween Kitties](docs/assets/evilpumpkin__by_clairebearer.gif)<br>
 WitchFall lets you follow the adventures of Addie, the Friendly Witch.  In this Beta version, explore the town of Pumpkin Falls, where it is always October and the air smells like pumpkin spice!  This is a Halloween-themed, friendly game that our team plans to continue developing as part of our portfolio.
 
 Based on the Open-Source framework of [React RPG](https://react-rpg.com/) by [Andrew Steinheiser](https://github.com/ASteinheiser/react-rpg.com), WitchFall is a"Work-In-Progress" RPG made with React and Redux.  The game is a turn-based, dungeon crawler that is slowly being changed to a quest system. Currently you can walk through the village in level 1, battling spiders and checking out the adorable environment.
 
 
 
-[Play WitchFall!](https://witchfall.herokuapp.com/)   ![Halloween Kitties](docs/assets/darkmoon3636.gif)
+[Play WitchFall Here!](https://witchfall.herokuapp.com/)   ![Halloween Kitties](docs/assets/darkmoon3636.gif)
 
 ## Requirements
 -  ReactJS  ![](docs/assets/check1.png)
@@ -28,20 +30,47 @@ Based on the Open-Source framework of [React RPG](https://react-rpg.com/) by [An
 -  MVC Folder Structure  ![](docs/assets/check1.png)
 
 
+## How To Play
+<span style="color:lawngreen">Addie starts off with a staff that she can use to get rid of the pesky spiders. The space-bar or enter-key will cast a spell at the spiders.</span>
+
+<span style="color:lawngreen">Tree stumps can hold gold, experience and even special items! Walk into the stump to trigger this. The look of the tree stump will change after you've emptied it.
+</span>
+
+<span style="color:lawngreen">In the settings folder, <ins>IF</ins> you have logged in with Google, you can 'Save Score' to add your name and level to the Leaderboard.
+</span>
+
+![WitchFall Intro](docs/assets/crouching_kitty.gif)
+
 ### Opening screens:
-![WitchFall Intro](docs/assets/witchfall1.png) - ![WitchFall Game Screen 1](docs/assets/witchfall2.png)
+![WitchFall Intro](docs/assets/witchfall1.png) &nbsp; ![WitchFall Game Screen 1](docs/assets/witchfall2.png)
 
 ### Game Controls:
 ![WitchFall Gameplay](docs/assets/witchfall3.png) 
 
-### Tree Stumps Hold Loot & You Can Whack Spiders With Your Staff:
-![Tree Stumps are Treasure Chests](docs/assets/witchfall4.png) &nbsp; ![Whack Spiders With Your Staff!](docs/assets/witchfall5.png)
+### Game Play - You can see that one stump has been emptied, the other still has loot. Also, as we build out the game, you will be able to walk into the buildings to explore other levels:
+![Tree Stumps are Treasure Chests](docs/assets/witchfall7.png) &nbsp; ![Whack Spiders With Your Staff!](docs/assets/witchfall8.png)
 
-### In the settings screen, you can turn the music on and off, and you can restart the game:
-![Settings 1](docs/assets/witchfall6.png) 
-![Settings 2](docs/assets/witchfall7.png)
+### In the settings screen, you can turn the music on and off, and you can restart the game. You can also save your level to see if you made it onto the Leaderboard (must log into Google first):
+![Settings 1](docs/assets/witchfall11.png)
 
 
+## How To Play Locally
+Clone and fork the repo to your system.
+
+CD into the main game folder & install all the NPM:
+```javascript
+npm install
+```
+Then CD into the client folder and do it again:
+```javascript
+npm install
+```
+Then you can run it from the client folder:
+```javascript
+npm run start
+```
+
+<br />
 
 ### Read more about React RPG
 - [Medium: Making an RPG with React + Redux - written by the maker of the original game code!](https://medium.com/@andrewsteinheiser/making-an-rpg-with-react-redux-dcfffdb06797)
@@ -63,3 +92,4 @@ Based on the Open-Source framework of [React RPG](https://react-rpg.com/) by [An
 </tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+</body>
