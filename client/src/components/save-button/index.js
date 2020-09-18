@@ -1,26 +1,28 @@
 import React from "react";
 import axios from "axios";
-
+import statsReducer from "../../features/stats/reducer";
 import "../button/styles.scss";
 
 const SaveButton = () => {
   function SaveScore() {
     console.log("Ran save score");
 
-    return (dispatch, getState) => {
-      const { level, gold } = getState().stats;
+    console.log(statsReducer);
 
-      console.log(getState().stats);
+    // return (dispatch, getState) => {
+    //   const { level, gold } = getState().stats;
 
-      axios
-        .post("/save", {
-          level: level,
-          gold: gold,
-        })
-        .then((resp) => {
-          console.log("Save request successful");
-        });
-    };
+    //   console.log(getState().stats);
+
+    //   axios
+    //     .post("/save", {
+    //       level: level,
+    //       gold: gold,
+    //     })
+    //     .then((resp) => {
+    //       console.log("Save request successful");
+    //     });
+    // };
   }
 
   return (
