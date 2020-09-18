@@ -16,7 +16,7 @@ const SaveButton = () => {
     //   console.log(stats);
 
     axios
-      .post("/save", {
+      .post("https://witchfall.herokuapp.com/save", {
         level: level,
         gold: gold,
       })
