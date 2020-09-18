@@ -46,9 +46,11 @@ module.exports = (app) => {
     var user = req.session.name;
 
     db.Scores.find()
-      .sort({ level: 1 })
       .then((resp) => {
-        res.json(resp);
+        const tempArray = resp.sort((a, b) => {
+          return a.level - b.level;
+        });
+        res.json(tempArray);
       })
       .catch((err) => {
         res.send(err);
