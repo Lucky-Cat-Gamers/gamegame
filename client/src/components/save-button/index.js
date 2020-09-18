@@ -6,7 +6,7 @@ import "../button/styles.scss";
 const SaveButton = () => {
   const SaveScore = () => {
     console.log("Ran save score");
-    console.log(`Store: ${store.getState()}`);
+    console.log(`Store: ${JSON.stringify(store.getState())}`);
 
     // return (dispatch, getState) => {
     //   const { stats, level, gold } = getState();
