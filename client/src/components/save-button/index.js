@@ -24,7 +24,7 @@ const SaveButton = () => {
   }
 
   return (
-    <button className="button__container" onClick={SaveScore}>
+    <button className="button__container" onClick={() => SaveScore}>
       <i className="fa fa-pen-nib button__icon"></i>
 
       <span>Save Score</span>
