@@ -29,6 +29,8 @@ mongooseConnection.once("open", () => {
 module.exports = (app) => {
   app.post("/login", (req, res) => {
     req.session.name = req.body.name;
+
+    res.send(req.session.name);
   });
 
   app.get("/logout", (req, res) => {
@@ -52,8 +54,12 @@ module.exports = (app) => {
       user: user,
       level: level,
       gold: gold,
-    }).then((resp) => {
-      res.send(resp);
-    });
+    })
+      .then((resp) => {
+        res.send(resp);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   });
 };
