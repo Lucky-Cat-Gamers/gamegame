@@ -8,7 +8,7 @@ export default function openChest() {
     // give the player a 25% chance to get a random item
     let itemDrop = false;
     const chance = Math.floor(Math.random() * 100) + 1;
-    if(chance <= 25) {
+    if(chance <= 65) {
       itemDrop = randomItem(level);
     }
     // get a random amount of gold between 1 and 8 PLUS player level x3
