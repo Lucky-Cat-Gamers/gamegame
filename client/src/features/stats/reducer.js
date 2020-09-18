@@ -1,10 +1,10 @@
 import _cloneDeep from 'lodash.clonedeep';
 
 const initialState = {
-  hp: 10,
-  maxHp: 10,
+  hp: 30,
+  maxHp: 30,
   damage: 3,
-  defence: 0,
+  defence: 3,
   level: 1,
   exp: 0,
   expToLevel: 20,
