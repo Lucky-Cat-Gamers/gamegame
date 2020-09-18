@@ -44,6 +44,15 @@ module.exports = (app) => {
 
   app.get("/load", (req, res) => {
     var user = req.session.name;
+
+    db.Scores.find()
+      .sort({ level: 1 })
+      .then((resp) => {
+        res.json(resp);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   });
 
   app.post("/save", (req, res) => {
