@@ -6,6 +6,7 @@ import Button from "../../../../components/button";
 import ConfirmDialog from "../../../../components/confirm-dialog";
 import Dialog from "../../../../components/dialog";
 import closeSettings from "../../actions/close-settings";
+import LeaderBoard from "../../../game-menus/leaderboard";
 import resetGameState from "../../../world/actions/reset-game-state";
 import SaveButton from "../../../../components/save-button";
 
@@ -25,10 +26,10 @@ const SettingsDialog = ({ resetGameState, closeSettings }) => {
           title="Return to Menu"
         />
 
-        <SaveButton />
+        <SaveButton /> <LeaderBoard />
 
         <GameMusic />
-
+        
         <Button onClick={closeSettings} icon="times" title="Close" />
       </div>
 
