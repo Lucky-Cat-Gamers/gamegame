@@ -13,11 +13,11 @@ import staff from './weapons/staff';
 import cobweb from './ingredients/cobweb';
 import firefly from './ingredients/firefly';
 import mugwort from './ingredients/mugwort';
-import cockroachShell from './ingredients/cockroachShell';
-import featherOfCrow from './ingredients/featherOfCrow';
+import toadstool from './ingredients/toadstool';
+import crowfeather from './ingredients/crowfeather';
 import flint from './ingredients/flint';
-import flowerPetals from './ingredients/flowerPetals';
-import hairOfWolf from './ingredients/hairOfWolf';
+import button from './ingredients/button';
+import butterflyMoth from './ingredients/butterflyMoth';
 
 
 const items = {
@@ -67,11 +67,11 @@ export const randomItemsT1 = [
   cobweb,
   mugwort,
   firefly,
-  cockroachShell,
-  hairOfWolf,
+  toadstool,
+  butterflyMoth,
   flint,
-  flowerPetals,
-  featherOfCrow
+  button,
+  crowfeather
 ];
 
 export const randomItemsT2 = [

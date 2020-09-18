@@ -1,4 +1,4 @@
-import skunkImg from './skunk.jpg';
+import skunkImg from './skunk.png';
 
 const skunk = {
   name: 'Skunk',
