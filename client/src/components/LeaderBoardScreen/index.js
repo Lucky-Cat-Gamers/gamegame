@@ -1,46 +1,54 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./style.css";
 
 class LeaderboardScreen extends Component {
   state = {
     scores: [],
   };
 
-  // componentDidMount() {
-  //   console.log("Is running component did mount");
+  componentDidMount() {
+    axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
+      console.log(resp.data);
 
-  //   axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
-  //     console.log(resp);
-
-  //     this.setState({
-  //       scores: resp,
-  //     });
-  //   });
-  // }
+      this.setState({
+        scores: resp.data,
+      });
+    });
+  }
 
   render() {
     return (
-      <div>
-        <h3>High Scores</h3>
-        {/* <table>
-          <thead>
-            <tr>
-              <th>Player</th>
-              <th>Score</th>
-              <th>Gold</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.scores.map((scores, i) => (
+      <div className="leaderBoardWrapper">
+        <h2>High Scores</h2>
+        {this.state.scores.length ? (
+          <table>
+            <thead>
               <tr>
-                <td>{i + 1}</td>
-                <td>{scores.user}</td>
-                <td>{scores.level}</td>
-                <td>{scores.gold}</td>
+                <th>#</th>
+                <th>Player</th>
+                <th>Level</th>
+                <th>Candy</th>
               </tr>
-            ))}
-          </tbody>
-        </table> */}
+            </thead>
+            <tbody>
+              {this.state.scores.slice(0, 10).map((scores, i) => (
+                <tr>
+                  <td>{i + 1}</td>
+                  <td>{scores.user}</td>
+                  <td>{scores.level}</td>
+                  <td>{scores.gold}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <h1>
+            <br />
+            Loading...
+            <br />
+          </h1>
+        )}
       </div>
     );
   }

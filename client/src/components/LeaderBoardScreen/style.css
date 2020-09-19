@@ -1,0 +1,23 @@
+.leaderBoardWrapper {
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: darkgoldenrod;
+}
+
+thead {
+  border-bottom: solid 1px darkgoldenrod;
+}
+
+th {
+  color: goldenrod;
+}
+
+th,
+td {
+  width: 25%;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
