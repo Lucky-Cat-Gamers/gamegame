@@ -12,7 +12,7 @@ export default function openChest() {
       itemDrop = randomItem(level);
     }
     // get a random amount of gold between 1 and 8 PLUS player level x3
-    const gold = (Math.floor(Math.random() * 8) + 1) + (level * 3);
+    const gold = (Math.floor(Math.random() * 8) + 1) + (level * 4);
     // get some level based exp
     const exp = (level * 5) + 5;
 

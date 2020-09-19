@@ -151,7 +151,7 @@ class Stats extends Component {
 
                 <div className='flex-row'>
                   <span className='stats__text--spacing'>
-                    {'GOLD: '}
+                    {'CANDY: '}
                   </span>
                   <span className='stats__text--gold'>
                     { gold }
