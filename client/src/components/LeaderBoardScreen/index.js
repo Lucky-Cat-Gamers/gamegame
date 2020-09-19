@@ -7,7 +7,11 @@ class LeaderboardScreen extends Component {
   };
 
   componentDidMount() {
+    console.log("Is running component did mount");
+
     axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
+      console.log(resp);
+
       this.setState({
         scores: resp,
       });
