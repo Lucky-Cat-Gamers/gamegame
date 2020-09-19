@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./style.css";
 
 class LeaderboardScreen extends Component {
   state = {
@@ -18,14 +19,14 @@ class LeaderboardScreen extends Component {
 
   render() {
     return (
-      <div>
-        <h2>High Scores</h2>
+      <div className="leaderBoardWrapper">
+        <h1>High Scores</h1>
         {this.state.scores.length ? (
           <table>
             <thead>
               <tr>
                 <th>Player</th>
-                <th>Score</th>
+                <th>Level</th>
                 <th>Candy</th>
               </tr>
             </thead>
@@ -43,7 +44,7 @@ class LeaderboardScreen extends Component {
         ) : (
           <h1>
             <br />
-            No Scores
+            Loading...
             <br />
           </h1>
         )}
