@@ -1,17 +1,17 @@
-import React       from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 
-import GameMusic    from './game-music';
-import GameSettings from './game-settings';
-import Inventory    from '../inventory';
-import Snackbar     from '../snackbar';
-import Stats        from '../stats';
-import GoogleLogin  from '../../components/google-login';
+import GameMusic from "./game-music";
+import GameSettings from "./game-settings";
+import Inventory from "../inventory";
+import Snackbar from "../snackbar";
+import Stats from "../stats";
+import GoogleLogin from "../../components/google-login";
+import LeaderBoard from "../../features/game-menus/leaderboard";
 
-import './styles.scss';
+import "./styles.scss";
 
 const GameMenus = ({ appState, dialog }) => {
-
   const { sideMenu, largeView } = appState;
   const { gameOver, gameStart, paused, inventory, settings } = dialog;
 
@@ -20,36 +20,34 @@ const GameMenus = ({ appState, dialog }) => {
   // disable the stats view when in game start or game over or settings
   const disableStats = gameStart || gameOver || settings;
 
-  return(
-    <div className='flex-row centered'>
-      <div className={`game-menu__container ${sideMenu ? 'flex-column' : 'flex-row'}`}
+  return (
+    <div className="flex-row centered">
+      <div
+        className={`game-menu__container ${
+          sideMenu ? "flex-column" : "flex-row"
+        }`}
         style={{
           maxWidth: largeView ? 400 : 350,
           paddingLeft: sideMenu ? 8 : 0,
-          height: sideMenu ? '380px' : 'unset',
-          justifyContent: disableInventory ? 'flex-end' : 'center'
-        }}>
-
+          height: sideMenu ? "380px" : "unset",
+          justifyContent: disableInventory ? "flex-end" : "center",
+        }}
+      >
         <Stats
           largeView={largeView}
           sideMenu={sideMenu}
-          disabled={disableStats} />
+          disabled={disableStats}
+        />
 
-        <Inventory
-          sideMenu={sideMenu}
-          disabled={disableInventory} />
+        <Inventory sideMenu={sideMenu} disabled={disableInventory} />
 
-        <div className='flex-column2'>
-          <GameSettings />
+        <div className="flex-column2">
+          <GameSettings /> <LeaderBoard />
         </div>
 
-        <GoogleLogin
-          largeView={largeView}
-          sideMenu={sideMenu} />
-               
+        <GoogleLogin largeView={largeView} sideMenu={sideMenu} />
       </div>
     </div>
-
   );
 };
 
