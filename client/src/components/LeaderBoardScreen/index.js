@@ -6,22 +6,23 @@ class LeaderboardScreen extends Component {
     scores: [],
   };
 
-  componentDidMount() {
-    console.log("Is running component did mount");
+  // componentDidMount() {
+  //   console.log("Is running component did mount");
 
-    axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
-      console.log(resp);
+  //   axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
+  //     console.log(resp);
 
-      this.setState({
-        scores: resp,
-      });
-    });
-  }
+  //     this.setState({
+  //       scores: resp,
+  //     });
+  //   });
+  // }
 
   render() {
     return (
       <div>
-        <table>
+        <h3>High Scores</h3>
+        {/* <table>
           <thead>
             <tr>
               <th>Player</th>
@@ -39,7 +40,7 @@ class LeaderboardScreen extends Component {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
       </div>
     );
   }
