@@ -20,7 +20,7 @@ class LeaderboardScreen extends Component {
   render() {
     return (
       <div className="leaderBoardWrapper">
-        <h1>High Scores</h1>
+        <h2>High Scores</h2>
         {this.state.scores.length ? (
           <table>
             <thead>

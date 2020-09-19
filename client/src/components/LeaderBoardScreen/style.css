@@ -3,12 +3,21 @@
   text-align: center;
 }
 
+h2 {
+  color: #daa43d;
+}
+
+thead {
+  border-bottom: solid 1px #daa43d;
+}
+
 th {
-  border-bottom: solid 1px #fff;
+  color: #daa43d;
 }
 
 th,
 td {
-  padding: 15px;
+  width: 30%;
+  padding: 5px 0 5px 0;
   text-align: center;
 }
