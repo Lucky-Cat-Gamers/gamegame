@@ -4,15 +4,21 @@
 }
 
 h2 {
-  color: #daa43d;
+  color: darkgoldenrod;
+}
+
+table {
+  background-color: darkgoldenrod;
+  height: 300px;
+  overflow: auto;
 }
 
 thead {
-  border-bottom: solid 1px #daa43d;
+  border-bottom: solid 1px darkgoldenrod;
 }
 
 th {
-  color: #daa43d;
+  color: goldenrod;
 }
 
 th,
