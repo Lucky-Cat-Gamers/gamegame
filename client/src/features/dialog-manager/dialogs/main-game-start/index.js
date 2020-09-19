@@ -15,11 +15,11 @@ const MainGameStart = ({ startMainGame, backToSelect }) => {
       onKeyPress={startMainGame}>
 
       <span className='flex-row game-start__title'>
-        {' '}
+        {'Explore the town of Pumpkin Falls'}
       </span>
 
       <span className='flex-column game-start__text'>
-        {'In this section of the game, explore the town of Pumpkin Falls'}
+        {'Take Addie trick-or-treating and collect candy from the Jack-O-Lanterns!'}
       </span>
 
       <div className='flex-column game-start__button'>

@@ -9,7 +9,7 @@ const SaveButton = () => {
     var stateLoad = store.getState();
     const { level, gold } = stateLoad.stats;
 
-    console.log(`Level: ${level} Gold: ${gold}`);
+    console.log(`Level: ${level} Candy: ${gold}`);
     // return (dispatch, getState) => {
     //   const { stats, level, gold } = getState();
 

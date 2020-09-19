@@ -34,8 +34,8 @@ const ChestLoot = ({ dialog, pickupItem, openChest, closeChestDialog }) => {
 
       <div className='flex-column chest-loot__contents'>
 
-        <div className='flex-row chest-loot__value--spacing'>
-          <span>{'Gold: '}</span>
+        <div className='flex-row chest-loot__value--spacing candy'>
+          <span>{'Candy: '}</span>
           <span>{ gold }</span>
         </div>
 

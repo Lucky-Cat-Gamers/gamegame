@@ -85,6 +85,12 @@ export function getTileSprite(type, variation) {
       return 'bakery';
     case 19:
       return 'book';
+    case 21:
+      return 'cottage2';
+    case 22:
+      return 'cottage3';
+    case 23:
+      return 'cottage4';
       default:
   }
 }
