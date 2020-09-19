@@ -5,15 +5,10 @@ import "../button/styles.scss";
 
 const SaveButton = () => {
   const SaveScore = () => {
-    console.log("Ran save score");
     var stateLoad = store.getState();
     const { level, gold } = stateLoad.stats;
 
     console.log(`Level: ${level} Gold: ${gold}`);
-    // return (dispatch, getState) => {
-    //   const { stats, level, gold } = getState();
-
-    //   console.log(stats);
 
     axios
       .post("https://witchfall.herokuapp.com/save", {

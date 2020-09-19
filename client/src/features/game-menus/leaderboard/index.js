@@ -1,22 +1,22 @@
-import React       from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import axios from "axios";
 
-import toggleSettings from '../../dialog-manager/actions/toggle-settings';
+import toggleLeaderboard from "../../dialog-manager/actions/toggle-leaderboard";
 
-import './styles.scss';
+import "./styles.scss";
 
-const LeaderBoard = ({ toggleSettings }) => {
-
-  return(
-    <button onClick={toggleSettings}
-      className='game-settings__button white-border'>
-
+const LeaderBoard = ({ toggleLeaderboard }) => {
+  return (
+    <button
+      onClick={toggleLeaderboard}
+      className="game-settings__button white-border"
+    >
       <i className={`fas fa-trophy game-settings__icon`} />
-
     </button>
   );
 };
 
-const actions = { toggleSettings };
+const actions = { toggleLeaderboard };
 
 export default connect(null, actions)(LeaderBoard);

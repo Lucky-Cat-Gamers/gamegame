@@ -1,4 +1,3 @@
-
 const initialState = {
   gameText: false,
   gameOver: false,
@@ -12,15 +11,27 @@ const initialState = {
   shop: false,
   settings: false,
   inventory: false,
-  levelUp: false
+  leaderboard: false,
+  levelUp: false,
 };
 
 const dialogManagerReducer = (state = initialState, { type, payload }) => {
-
-  switch(type) {
-
-    case 'PAUSE':
-      const { shop, chest, gameStart, inventory, gameOver, gameText, gameWin, gameSelect, gameInstructions, levelUp, pause } = payload;
+  switch (type) {
+    case "PAUSE":
+      const {
+        shop,
+        chest,
+        gameStart,
+        inventory,
+        gameOver,
+        gameText,
+        gameWin,
+        gameSelect,
+        gameInstructions,
+        levelUp,
+        leaderboard,
+        pause,
+      } = payload;
 
       return {
         ...state,
@@ -34,19 +45,20 @@ const dialogManagerReducer = (state = initialState, { type, payload }) => {
         gameWin: gameWin || false,
         gameSelect: gameSelect || null,
         gameInstructions: gameInstructions || false,
-        paused: pause
+        leaderboard: leaderboard || false,
+        paused: pause,
       };
 
-    case 'SET_CHEST_DATA':
+    case "SET_CHEST_DATA":
       return { ...state, chestOpen: payload };
 
-    case 'OPEN_SETTINGS':
+    case "OPEN_SETTINGS":
       return { ...state, settings: true };
 
-    case 'CLOSE_SETTINGS':
+    case "CLOSE_SETTINGS":
       return { ...state, settings: false };
 
-    case 'SET_STORY_MAP':
+    case "SET_STORY_MAP":
       const { direction, currentMap, storyMaps } = payload;
 
       const { stairs } = storyMaps[currentMap];
@@ -55,20 +67,20 @@ const dialogManagerReducer = (state = initialState, { type, payload }) => {
 
       const { message } = storyMaps[nextMap];
       // if the map has a message and player is going up, display message
-      if(message && direction === 'up') {
+      if (message && direction === "up") {
         return {
           ...state,
           paused: true,
           gameText: {
             title: message.title,
-            body: message.body
-          }
+            body: message.body,
+          },
         };
       }
 
       return state;
 
-    case 'RESET':
+    case "RESET":
       return initialState;
 
     default:
