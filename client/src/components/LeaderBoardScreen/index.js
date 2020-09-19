@@ -7,10 +7,8 @@ class LeaderboardScreen extends Component {
   };
 
   componentDidMount() {
-    console.log("Is running component did mount");
-
     axios.get("https://witchfall.herokuapp.com/load").then((resp) => {
-      console.log(resp);
+      console.log(resp.data);
 
       this.setState({
         scores: resp.data,
@@ -28,11 +26,11 @@ class LeaderboardScreen extends Component {
               <tr>
                 <th>Player</th>
                 <th>Score</th>
-                <th>Gold</th>
+                <th>Candy</th>
               </tr>
             </thead>
             <tbody>
-              {this.state.scores.map((scores, i) => (
+              {this.state.scores.slice(0, 10).map((scores, i) => (
                 <tr>
                   <td>{i + 1}</td>
                   <td>{scores.user}</td>
