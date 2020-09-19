@@ -7,12 +7,6 @@ h2 {
   color: darkgoldenrod;
 }
 
-table {
-  background-color: darkgoldenrod;
-  height: 250px;
-  overflow: auto;
-}
-
 thead {
   border-bottom: solid 1px darkgoldenrod;
 }
