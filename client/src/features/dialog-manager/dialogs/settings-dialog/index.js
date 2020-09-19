@@ -26,10 +26,10 @@ const SettingsDialog = ({ resetGameState, closeSettings }) => {
           title="Return to Menu"
         />
 
-        <SaveButton /> <LeaderBoard />
+        <SaveButton />
 
         <GameMusic />
-        
+
         <Button onClick={closeSettings} icon="times" title="Close" />
       </div>
 

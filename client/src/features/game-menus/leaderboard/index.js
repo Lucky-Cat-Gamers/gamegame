@@ -1,20 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
+import axios from "axios";
 
 import toggleLeaderboard from "../../dialog-manager/actions/toggle-leaderboard";
-import toggleSettings from "../../dialog-manager/actions/toggle-settings";
 
 import "./styles.scss";
 
-const LeaderBoard = ({ toggleLeaderboard, toggleSettings }) => {
-  function masterToggle() {
-    toggleLeaderboard();
-    toggleSettings();
-  }
-
+const LeaderBoard = ({ toggleLeaderboard }) => {
   return (
     <button
-      onClick={masterToggle}
+      onClick={toggleLeaderboard}
       className="game-settings__button white-border"
     >
       <i className={`fas fa-trophy game-settings__icon`} />
