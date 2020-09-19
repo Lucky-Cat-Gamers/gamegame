@@ -21,34 +21,25 @@ class LeaderboardScreen extends Component {
   render() {
     return (
       <div>
-        <h1>High Scores</h1>
-        {this.state.scores.length ? (
-          <table>
-            <thead>
+        <table>
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Score</th>
+              <th>Gold</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.scores.map((scores, i) => (
               <tr>
-                <th>Player</th>
-                <th>Score</th>
-                <th>Gold</th>
+                <td>{i + 1}</td>
+                <td>{scores.user}</td>
+                <td>{scores.level}</td>
+                <td>{scores.gold}</td>
               </tr>
-            </thead>
-            <tbody>
-              {this.state.scores.map((scores, i) => (
-                <tr>
-                  <td>{i + 1}</td>
-                  <td>{scores.user}</td>
-                  <td>{scores.level}</td>
-                  <td>{scores.gold}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        ) : (
-          <h1>
-            <br />
-            No Scores
-            <br />
-          </h1>
-        )}
+            ))}
+          </tbody>
+        </table>
       </div>
     );
   }
