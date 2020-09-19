@@ -25,6 +25,7 @@ class LeaderboardScreen extends Component {
           <table>
             <thead>
               <tr>
+                <th>#</th>
                 <th>Player</th>
                 <th>Level</th>
                 <th>Candy</th>
