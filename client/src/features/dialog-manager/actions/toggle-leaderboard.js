@@ -6,13 +6,19 @@ export default function toggleLeaderboard() {
         payload: { pause: false },
       });
     } else {
-      dispatch({
-        type: "PAUSE",
-        payload: {
-          pause: true,
-          leaderboard: true,
+      dispatch(
+        {
+          type: "PAUSE",
+          payload: {
+            pause: true,
+            leaderboard: true,
+          },
         },
-      });
+        {
+          type: "OPEN_SETTINGS",
+          payload: null,
+        }
+      );
     }
   };
 }
