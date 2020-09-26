@@ -76,13 +76,13 @@ const GameMusic = ({ sideMenu, gameSoundEnabled, setGameSound }) => {
         playStatus={'PLAYING'}
         autoLoad={true}
         loop={true}
-        volume={50} />
+        volume={20} />
     );
     setGameSound(true);
   }
 
   return (
-    <button className='game-music__button white-border'
+    <button className='game-music__button'
       onClick={toggleMusic}
       style={{ marginTop: sideMenu ? 0 : 10 }}>
 
