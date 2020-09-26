@@ -28,7 +28,7 @@ const GameMenus = ({ appState, dialog }) => {
         }`}
         style={{
           maxWidth: largeView ? 400 : 350,
-          paddingLeft: sideMenu ? 8 : 0,
+          paddingLeft: sideMenu ? 4 : 0,
           height: sideMenu ? "380px" : "unset",
           justifyContent: disableInventory ? "flex-end" : "center",
         }}
@@ -36,16 +36,25 @@ const GameMenus = ({ appState, dialog }) => {
         <Stats
           largeView={largeView}
           sideMenu={sideMenu}
-          disabled={disableStats}
-        />
+          disabled={disableStats} />
 
-        <Inventory sideMenu={sideMenu} disabled={disableInventory} />
+        <Inventory
+          sideMenu={sideMenu}
+          disabled={disableInventory} />
+
+        <Snackbar
+          largeView={largeView}
+          sideMenu={sideMenu} />
 
         <div className="flex-column2">
-          <GameSettings /> <LeaderBoard />
+          <GameMusic /> &nbsp;
+          <GameSettings /> &nbsp;
+          <LeaderBoard />
         </div>
 
-        <GoogleLogin largeView={largeView} sideMenu={sideMenu} />
+        <GoogleLogin 
+        largeView={largeView} 
+        sideMenu={sideMenu} />
       </div>
     </div>
   );
