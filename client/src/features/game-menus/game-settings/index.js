@@ -9,7 +9,7 @@ const GameSettings = ({ toggleSettings }) => {
 
   return(
     <button onClick={toggleSettings}
-      className='game-settings__button white-border'>
+      className='game-settings__button'>
 
       <i className={`fa fa-cog game-settings__icon`} />
 

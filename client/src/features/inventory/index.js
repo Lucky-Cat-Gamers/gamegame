@@ -58,11 +58,11 @@ class Inventory extends Component {
               icon={open ?
                 'times' : 'briefcase'}
               iconStyle={open ?
-                {fontSize: 22} : {fontSize: sideMenu ? 20 : 23}}
+                {fontSize: 20} : {fontSize: sideMenu ? 20 : 20}}
               title={open ?
                 'Close' : 'Inventory'}
               style={{
-                width: open ? 135 : 195,
+                width: open ? 135 : 190,
                 transition: 'width .25s ease-out',
                 whiteSpace: 'nowrap',
                 overflow: 'hidden',

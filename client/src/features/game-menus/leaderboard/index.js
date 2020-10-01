@@ -10,7 +10,7 @@ const LeaderBoard = ({ toggleLeaderboard }) => {
   return (
     <button
       onClick={toggleLeaderboard}
-      className="game-settings__button white-border"
+      className="game-settings__button"
     >
       <i className={`fas fa-trophy game-settings__icon`} />
     </button>
