@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import GameMusic from "./game-music";
 import GameSettings from "./game-settings";
 import Inventory from "../inventory";
-import Snackbar from "../snackbar";
+//import Snackbar from "../snackbar";
 import Stats from "../stats";
 import GoogleLogin from "../../components/google-login";
 import LeaderBoard from "../../features/game-menus/leaderboard";
@@ -41,10 +41,6 @@ const GameMenus = ({ appState, dialog }) => {
         <Inventory
           sideMenu={sideMenu}
           disabled={disableInventory} />
-
-        <Snackbar
-          largeView={largeView}
-          sideMenu={sideMenu} />
 
         <div className="flex-column2">
           <GameMusic /> &nbsp;
