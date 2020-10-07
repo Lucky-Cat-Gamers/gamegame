@@ -17,6 +17,10 @@ const tiles = [
   [5, 5, 5, 5, 5, 5, 21, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 ];
 
+// grid coordinates are Horizontal then Vertical
+// chests: 10 | spiders: 5
+// spiders appear 1 right and 1 down from input grid coordinates
+
 const monsters = [
   {
     type: 'spider',
