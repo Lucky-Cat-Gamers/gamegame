@@ -59,17 +59,17 @@ const items = {
 };
 
 export const randomItemsT1 = [
-  butterflyMoth,
+  //butterflyMoth,
   button,
-  witchCape,
-  cobweb,
-  crowfeather,
-  firefly,
-  flint,
-  mugwort,
+//  cobweb,
+//  crowfeather,
+//  firefly,
+//  flint,
+//  mugwort,
   skunk,
-  toadstool,
+//  toadstool,
   witchBoots,
+  witchCape,
   witchGloves,
   witchHat
 ];

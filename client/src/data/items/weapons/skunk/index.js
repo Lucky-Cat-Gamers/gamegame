@@ -4,7 +4,7 @@ const skunk = {
   name: 'Skunk',
   type: 'weapon',
   range: 'melee',
-  damage: 100,
+  damage: 8,
   image: skunkImg,
   value: 300
 };

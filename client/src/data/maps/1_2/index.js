@@ -51,11 +51,11 @@ const monsters = [
   },
   {
     type: 'spider',
-    position: [9, 3]
+    position: [23, 3]
   },
   {
     type: 'spider',
-    position: [11, 15]
+    position: [8, 15]
   },
   {
     type: 'spider',
@@ -63,7 +63,7 @@ const monsters = [
   },
   {
     type: 'spider',
-    position: [12, 23]
+    position: [26, 14]
   },
   {
     type: 'spider',
@@ -71,15 +71,15 @@ const monsters = [
   },
   {
     type: 'spider',
-    position: [15, 6]
+    position: [18, 7]
   },
   {
     type: 'spider',
-    position: [15, 19]
+    position: [25, 12]
   },
   {
     type: 'spider',
-    position: [16, 12]
+    position: [25, 6]
   }
 ];
 
