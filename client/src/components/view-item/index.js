@@ -66,7 +66,7 @@ const ViewItem = ({ sell, buy, onClose, data, stats, unequipItem, buyItem,
       itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;
 
-    case 'armor::cape':
+    case 'armor::body':
       itemIsEquipped = (equipped.armor && JSON.stringify(equipped.armor.body) === JSON.stringify(data));
       itemStats.push(<StatsItem stats={{ name: 'defense', value: data.defence }} key={uuidv4()} />);
       break;

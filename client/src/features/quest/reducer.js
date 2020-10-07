@@ -102,7 +102,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
         case 'weapon':
           // if there's already a weapon
           if(newState.equippedItems.weapon) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.damage -= newState.equippedItems.weapon.damage;
           }
           newState.damage += item.damage;
@@ -112,55 +112,55 @@ const statsReducer = (state = initialState, { type, payload }) => {
         case 'armor::body':
           // if there's already armor
           if(newState.equippedItems.armor && newState.equippedItems.armor.body) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.defence -= newState.equippedItems.armor.body.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, body: item };
           break;
 
         case 'armor::helmet':
           // if there's already armor
           if(newState.equippedItems.armor && newState.equippedItems.armor.helmet) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.defence -= newState.equippedItems.armor.helmet.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, helmet: item };
           break;
 
         case 'armor::pants':
           // if there's already armor
           if(newState.equippedItems.armor && newState.equippedItems.armor.pants) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.defence -= newState.equippedItems.armor.pants.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, pants: item };
           break;
 
         case 'armor::gloves':
           // if there's already armor
           if(newState.equippedItems.armor && newState.equippedItems.armor.gloves) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.defence -= newState.equippedItems.armor.gloves.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, gloves: item };
           break;
 
         case 'armor::boots':
           // if there's already armor
           if(newState.equippedItems.armor && newState.equippedItems.armor.boots) {
-            // subtract it's benefits
+            // subtract its benefits
             newState.defence -= newState.equippedItems.armor.boots.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, boots: item };
           break;
 
@@ -168,7 +168,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
           const equippedRing = newState.equippedItems.ring;
           // if there's already a ring
           if(equippedRing) {
-            // subtract it's benefits
+            // subtract its benefits
             Object.keys(equippedRing.effect).forEach(effectName => {
 
               switch(effectName) {
@@ -224,7 +224,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
     case 'HEAL_HP':
       // heal the hp
       let _hp = state.hp + payload;
-      // dont go above max hp
+      // don't go above max hp
       if(_hp > state.maxHp) _hp = state.maxHp;
 
       return { ...state, hp: _hp };
@@ -248,12 +248,12 @@ const statsReducer = (state = initialState, { type, payload }) => {
           newState.exp = leftoverExp;
         }
 
-        // set next exp goal to be 1.5 times as much if player is 5 or less
+        // set next exp goal to be 2 times as much if player is 5 or less
         if(newState.level < 6) {
-          newState.expToLevel = Math.floor(state.expToLevel * 1.5);
-        } // otherwise set it to be 1.25 times as much
+          newState.expToLevel = Math.floor(state.expToLevel * 2);
+        } // otherwise set it to be 1.5 times as much
         else if(newState.level < 20) {
-          newState.expToLevel = Math.floor(state.expToLevel * 1.25);
+          newState.expToLevel = Math.floor(state.expToLevel * 1.5);
         }
         else {} // let the exp goal remain static if they are lv 20+
 
