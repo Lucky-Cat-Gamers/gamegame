@@ -1,15 +1,46 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 
+import Button from "../../../../components/button";
+import ConfirmDialog from "../../../../components/confirm-dialog";
 import Dialog from "../../../../components/dialog";
-import LeaderboardScreen from "../../../../components/LeaderBoardScreen";
+import closeSettings from "../../actions/close-settings";
+import resetGameState from "../../../world/actions/reset-game-state";
+import SaveButton from "../../../../components/save-button";
+
 import "./styles.scss";
 
-const LeaderboardDialog = () => {
+const SettingsDialog = ({ resetGameState, closeSettings }) => {
+  const [confirmQuit, setConfirmQuit] = useState(false);
+
   return (
     <Dialog>
-      <LeaderboardScreen />
+      <div className="flex-column settings-dialog__container">
+        <span className="settings-dialog__title">{"Settings"}</span>
+
+        <Button
+          onClick={() => setConfirmQuit(true)}
+          icon="caret-square-left"
+          title="Return to Menu"
+        />
+
+        <SaveButton />
+
+        
+
+        <Button onClick={closeSettings} icon="times" title="Close" />
+      </div>
+
+      <ConfirmDialog
+        open={confirmQuit}
+        text="Are you sure you want to quit? You will lose all progress..."
+        onClose={() => setConfirmQuit(false)}
+        confirm={resetGameState}
+      />
     </Dialog>
   );
 };
 
-export default LeaderboardDialog;
+const actions = { resetGameState, closeSettings };
+
+export default connect(null, actions)(SettingsDialog);

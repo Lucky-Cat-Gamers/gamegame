@@ -116,7 +116,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
             newState.defence -= newState.equippedItems.armor.body.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, body: item };
           break;
 
@@ -127,7 +127,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
             newState.defence -= newState.equippedItems.armor.helmet.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, helmet: item };
           break;
 
@@ -138,7 +138,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
             newState.defence -= newState.equippedItems.armor.pants.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, pants: item };
           break;
 
@@ -149,7 +149,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
             newState.defence -= newState.equippedItems.armor.gloves.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, gloves: item };
           break;
 
@@ -160,7 +160,7 @@ const statsReducer = (state = initialState, { type, payload }) => {
             newState.defence -= newState.equippedItems.armor.boots.defence;
           }
           newState.defence += item.defence;
-          // safely add new armor peice to object
+          // safely add new armor piece to object
           newState.equippedItems.armor = { ...newState.equippedItems.armor, boots: item };
           break;
 

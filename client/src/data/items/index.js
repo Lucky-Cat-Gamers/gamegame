@@ -8,7 +8,7 @@ import skunk           from './weapons/skunk';
 import witchGloves from './armor/witch-gloves';
 import witchHat from './armor/witch-hat';
 import witchBoots from './armor/witch-boots';
-import cape from './armor/cape';
+import witchCape from './armor/witch-cape';
 import staff from './weapons/staff';
 import cobweb from './ingredients/cobweb';
 import firefly from './ingredients/firefly';
@@ -41,7 +41,7 @@ const items = {
     // SteelHelm,
     // SteelGloves,
     // SteelPants
-    cape,
+    witchCape,
     witchBoots,
     witchGloves,
     witchHat
@@ -59,19 +59,19 @@ const items = {
 };
 
 export const randomItemsT1 = [
-  skunk,
-  witchGloves,
-  witchBoots,
-  witchHat,
-  cape,
-  cobweb,
-  mugwort,
-  firefly,
-  toadstool,
   butterflyMoth,
-  flint,
   button,
-  crowfeather
+  witchCape,
+  cobweb,
+  crowfeather,
+  firefly,
+  flint,
+  mugwort,
+  skunk,
+  toadstool,
+  witchBoots,
+  witchGloves,
+  witchHat
 ];
 
 export const randomItemsT2 = [
