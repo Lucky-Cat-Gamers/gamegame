@@ -26,7 +26,7 @@ class Player extends Component {
     this.canvasRef = React.createRef();
     this.directionMap = {
       SOUTH: 0, // facing down, line 1 of spritesheet
-      NORTH: 1, // facinf up, line 2 of spritesheet
+      NORTH: 1, // facing up, line 2 of spritesheet
       WEST: 2, // facing left, line 3 of spritesheet
       EAST: 3 // facing right, line 4 of spritesheet
     };
