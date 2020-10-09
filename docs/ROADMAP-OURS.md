@@ -99,6 +99,24 @@
   - 
   - 
 
+### GAME SCREEN (VIEWPORT)
+- <span style="color:orange">src/_tests_/utils/get-surrounding-tiles.js</span>
+  - desc
+- <span style="color:orange">src/components/view-item/index.js</span>
+  - Sets case for each item, equip state, Buy & Sell actions for store, & use actions for consumable items
+- <span style="color:orange">src/components/equipped-items/index.js</span>
+  - Handles everything to do with equipping items
+- <span style="color:orange">public/tiles/</span>
+  - PNG files: All objects used in the maps, 40x40px
+- 
+    - 
+  - 
+- 
+- 
+- 
+  - 
+  - 
+
 ### MISC
 - <span style="color:orange"><b>src/config/constant.js</b></span>
   - Sight Radius: Adjusts visible map area

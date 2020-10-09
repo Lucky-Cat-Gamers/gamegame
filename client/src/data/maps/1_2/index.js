@@ -1,9 +1,9 @@
 const tiles = [
   [5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-  [5, 5, 5, 5, 0, 0, 5, 5, 5, 4, 5, 5, 0, 2, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+  [5, 5, 5, 5, 0, 0, 5, 5, 5, 3, 5, 5, 0, 2, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5],
   [5, 4, 0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 0, 5, 5, 5, 5, 5, 4, 0, 4, 5],
   [5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 5],
-  [5, 5, 5, 5, 3, 0, 0, 0, 4, 5, 5, 5, 4, 0, 5, 5, 5, 5, 0, 5, 5, 5, 0, 5, 4, 0, 4, 5],
+  [5, 5, 5, 5, 0, 0, 0, 0, 4, 5, 5, 5, 4, 0, 5, 5, 5, 5, 0, 5, 5, 5, 0, 5, 4, 0, 4, 5],
   [5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 5, 5, 0, 5, 5],
   [4, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 5, 5, 5, 5, 5, 5, 0, 5, 5],
   [5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 5, 5, 5, 5, 0, 0, 0, 5, 5],
@@ -17,9 +17,8 @@ const tiles = [
   [5, 5, 5, 5, 0, 0, 0, 0, 0, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5]
 ];
 
-// grid coordinates are Horizontal then Vertical
-// chests: 19 | spiders: 15
-// spiders appear 1 right and 1 down from input grid coordinates
+// grid coordinates are Horizontal then Vertical, count starts at 0 index
+// chests: 19 | spiders: 11 | goblins: 4
 const monsters = [
   {
     type: 'spider',
@@ -50,7 +49,7 @@ const monsters = [
     position: [7, 5]
   },
   {
-    type: 'spider',
+    type: 'goblin',
     position: [23, 3]
   },
   {
@@ -62,7 +61,7 @@ const monsters = [
     position: [12, 4]
   },
   {
-    type: 'spider',
+    type: 'goblin',
     position: [26, 14]
   },
   {
@@ -74,11 +73,11 @@ const monsters = [
     position: [18, 7]
   },
   {
-    type: 'spider',
+    type: 'goblin',
     position: [25, 12]
   },
   {
-    type: 'spider',
+    type: 'goblin',
     position: [25, 6]
   }
 ];
@@ -88,8 +87,14 @@ const stairs = {
   down: '1_1'
 };
 
+const message = {
+  title: 'Level 2',
+  body: 'Currently empty of everything but spiders, goblins and jack-o-lanterns for play testing!'
+};
+
 export default {
   tiles,
   monsters,
-  stairs
+  stairs,
+  message
 };
