@@ -1,6 +1,6 @@
 // max number of inventory items
-export const MAX_ITEMS = 8;
-export const MAX_ITEMS_UPGRADE = 12;
+export const MAX_ITEMS = 16;
+export const MAX_ITEMS_UPGRADE = 20;
 
 // how far the player can 'see' or 'explore'
 export const SIGHT_RADIUS = 6;
