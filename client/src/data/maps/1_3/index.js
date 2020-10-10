@@ -18,68 +18,68 @@ const tiles = [
 ];
 
 // grid coordinates are Horizontal then Vertical, count starts at 0 index
-// chests: 18 | spiders: 7 | goblins: 8
+// chests: 18 | ghosts: 15
 
 const monsters = [
   {
-    type: 'spider',
+    type: 'ghost',
     position: [1, 10]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [3, 14]
   },
   {
-    type: 'spider',
+    type: 'ghost',
     position: [3, 7]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [4, 10]
   },
   {
-    type: 'spider',
+    type: 'ghost',
     position: [5, 2]
   },
   {
-    type: 'goblin',
-    position: [6, 8]
+    type: 'ghost',
+    position: [5, 8]
   },
   {
-    type: 'spider',
+    type: 'ghost',
     position: [7, 5]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [23, 3]
   },
   {
-    type: 'spider',
+    type: 'ghost',
     position: [8, 15]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [12, 4]
   },
   {
-    type: 'spider',
-    position: [26, 14]
+    type: 'ghost',
+    position: [25, 14]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [13, 8]
   },
   {
-    type: 'spider',
+    type: 'ghost',
     position: [18, 7]
   },
   {
-    type: 'goblin',
+    type: 'ghost',
     position: [25, 12]
   },
   {
-    type: 'goblin',
-    position: [25, 6]
+    type: 'ghost',
+    position: [25, 5]
   }
 ];
 
@@ -90,7 +90,7 @@ const stairs = {
 
 const message = {
   title: 'Level 3',
-  body: 'Currently empty of everything but spiders, goblins and jack-o-lanterns for play testing! Going into shop resets the game'
+  body: 'Currently empty of everything but ghosts and jack-o-lanterns for play testing! Going into shop resets the game'
 };
 
 export default {

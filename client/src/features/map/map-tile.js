@@ -58,7 +58,7 @@ export function getTileSprite(type, variation) {
     case 5:
       return `brick-wall-${variation}`;
     case 6:
-      return `ornate-wall-${variation}`;
+      return `tombstone-${variation}`;
     case 7:
       return `blue-wall-${variation}`;
     case 8:
@@ -91,6 +91,8 @@ export function getTileSprite(type, variation) {
       return 'cottage3';
     case 23:
       return 'cottage4';
+    case 24:
+      return `tombstone-${variation}`;
       default:
   }
 }
