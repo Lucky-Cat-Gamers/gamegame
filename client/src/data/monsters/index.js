@@ -7,6 +7,7 @@ import Lich       from './lich';
 import Rat        from './rat';
 import StoneGolem from './stone-golem';
 import Spider from './spider';
+import Zombie from './zombie';
 
 
 const monsters = {
@@ -18,6 +19,7 @@ const monsters = {
   rat: Rat,
   spider: Spider,
   angryMob: AngryMob,
+  zombie: Zombie,
   'stone-golem': StoneGolem
 };
 

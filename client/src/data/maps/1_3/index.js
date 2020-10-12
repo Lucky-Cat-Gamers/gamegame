@@ -18,7 +18,7 @@ const tiles = [
 ];
 
 // grid coordinates are Horizontal then Vertical, count starts at 0 index
-// chests: 18 | ghosts: 15
+// chests: 18 | ghosts: 11 | zombies: 4
 
 const monsters = [
   {
@@ -50,7 +50,7 @@ const monsters = [
     position: [7, 5]
   },
   {
-    type: 'ghost',
+    type: 'zombie',
     position: [23, 3]
   },
   {
@@ -62,7 +62,7 @@ const monsters = [
     position: [12, 4]
   },
   {
-    type: 'ghost',
+    type: 'zombie',
     position: [25, 14]
   },
   {
@@ -74,11 +74,11 @@ const monsters = [
     position: [18, 7]
   },
   {
-    type: 'ghost',
+    type: 'zombie',
     position: [25, 12]
   },
   {
-    type: 'ghost',
+    type: 'zombie',
     position: [25, 5]
   }
 ];
@@ -90,7 +90,7 @@ const stairs = {
 
 const message = {
   title: 'Level 3',
-  body: 'Currently empty of everything but ghosts and jack-o-lanterns for play testing! Going into shop resets the game'
+  body: 'Currently empty of everything but ghosts, zombies and jack-o-lanterns for play testing! Going into shop resets the game'
 };
 
 export default {
