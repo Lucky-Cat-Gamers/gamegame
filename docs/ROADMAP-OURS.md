@@ -12,14 +12,14 @@
 - Add one dialog screen that explains saving/leaderboard
   - First with a set list of items
 - Level 2 - Cemetery
-- Create Basic Quest System
-  - First with a set list of items
-  - Then with a randomly generated list
 - Loot Chest Regenerate
 - Monster Regenerate
 - Monsters
   - Zombie - Level 2 / Cemetery
 - Inventory items leave backpack when equipped
+- Create Basic Quest System
+  - First with a set list of items
+  - Then with a randomly generated list
 - Clean up viewport sizing logic and add magnified size for large desktop
 
 ## Current To-Do List
@@ -28,9 +28,6 @@
   - Add another icon to main page, attached to a complete copy of settings
   - Replace settings copy stuff with leaderboard stuff
   -make sure it works
-- Cape - Defense not showing up in item detail window. cape is armor::body
-  - cape not shown in src/components/equipped-items/
-  - TEXT
 - Create Basic Quest System
   - First with a set list of items
   - Then with a randomly generated list
@@ -115,8 +112,6 @@
 - <span style="color:orange">TEXT</span>
   - desc
 - 
-  - 
-- 
 
 ### MONSTERS
 - <span style="color:orange">src/data/monsters/index.js</span>
@@ -129,7 +124,6 @@
   - desc
 - 
   - 
-- 
 
 ### ACTIONS / GAMEPLAY
 - <span style="color:orange">src/features/monsters/actions/load-monsters.js</span>
