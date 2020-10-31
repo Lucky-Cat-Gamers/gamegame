@@ -48,26 +48,26 @@ const BackpackItems = ({ viewItem, inventory }) => {
 
       
       <div className='flex-row'>
+        <EmptySlot>{ itemSlots[8] }</EmptySlot>
         <EmptySlot>{ itemSlots[9] }</EmptySlot>
         <EmptySlot>{ itemSlots[10] }</EmptySlot>
         <EmptySlot>{ itemSlots[11] }</EmptySlot>
-        <EmptySlot>{ itemSlots[12] }</EmptySlot>
       </div>
 
       <div className='flex-row'>
+        <EmptySlot>{ itemSlots[12] }</EmptySlot>
         <EmptySlot>{ itemSlots[13] }</EmptySlot>
         <EmptySlot>{ itemSlots[14] }</EmptySlot>
         <EmptySlot>{ itemSlots[15] }</EmptySlot>
-        <EmptySlot>{ itemSlots[16] }</EmptySlot>
       </div>
 
       {
         maxItems === MAX_ITEMS_UPGRADE &&
           <div className='flex-row'>
+            <EmptySlot>{ itemSlots[16] }</EmptySlot>
             <EmptySlot>{ itemSlots[17] }</EmptySlot>
             <EmptySlot>{ itemSlots[18] }</EmptySlot>
             <EmptySlot>{ itemSlots[19] }</EmptySlot>
-            <EmptySlot>{ itemSlots[20] }</EmptySlot>
           </div>
       }
     </div>
